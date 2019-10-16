@@ -38,7 +38,7 @@ export default {
         },
         {
           name: "(old) portfolio",
-          href: "https://sjfortin.com"
+          href: "https://lucid-snyder-1b0faa.netlify.com/"
         }
       ]
     };
