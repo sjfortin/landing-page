@@ -21,19 +21,19 @@ export default {
     return {
       links: [
         {
-          name: "gmail",
+          name: "Gmail",
           href: "mailto:sam.j.fortin@gmail.com"
         },
         {
-          name: "github",
+          name: "GitHub",
           href: "https://github.com/sjfortin"
         },
         {
-          name: "linked",
+          name: "LinkedIn",
           href: "https://linkedin.com/sjfortin"
         },
         {
-          name: "codepen",
+          name: "CodePen",
           href: "https://codepen.io/sjfortin/"
         },
         {
