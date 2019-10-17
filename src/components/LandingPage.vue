@@ -3,8 +3,8 @@
     <img class="head mx-auto w-16 h-16" alt="sjf logo" src="../assets/head.jpeg" />
     <h1 class="text-4xl md:text-6xl">{{ msg }}</h1>
     <p class="text-lg md:text-2xl">Web Developer from Minneapolis</p>
-    <ul class="py-8">
-      <li class="inline mx-2 md:mx-6" v-for="(link, index) in links" v-bind:key="index">
+    <ul class="py-6">
+      <li class="inline-block py-2 mx-4 md:mx-6" v-for="(link, index) in links" v-bind:key="index">
         <a
           class="text-purple-500 hover:text-purple-700 focus:text-purple-700"
           v-bind:href="link.href"

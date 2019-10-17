@@ -7,6 +7,8 @@
 <script>
 import LandingPage from "./components/LandingPage.vue";
 
+document.title = 'sjfortin';
+
 export default {
   name: "app",
   components: {
