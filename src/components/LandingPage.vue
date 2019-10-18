@@ -3,27 +3,34 @@
     <img class="head mx-auto w-16 h-16" alt="sjf logo" src="../assets/head.jpeg" />
     <h1 class="text-4xl md:text-6xl">{{ msg }}</h1>
     <p class="text-lg md:text-2xl">Web Developer from Minneapolis</p>
+    <p class="text-md pt-4">
+      Current: Sr Software Engineer at
+      <a href="https://www.optum.com" target="_blank" rel="noopener">
+        Optum
+        <img
+          class="inline-block mb-1 w-3 h-3"
+          src="../assets/icons/external-link.svg"
+          alt="Opens in a new window"
+        />
+      </a>
+    </p>
+    <p class="text-md pt-4">
+      <a href="https://lucid-snyder-1b0faa.netlify.com/" target="_blank" rel="noopener">
+        Portfolio
+        <img
+          class="inline-block mb-1 w-3 h-3"
+          src="../assets/icons/external-link.svg"
+          alt="Opens in a new window"
+        />
+      </a>
+    </p>
     <ul class="py-6">
-      <li class="inline-block py-2 mx-4 md:mx-6" v-for="(link, index) in links" v-bind:key="index">
-        <a
-          class="text-purple-500 hover:text-purple-700 focus:text-purple-700"
-          v-bind:href="link.href"
-          target="_blank"
-          rel="noopener"
-        >
-          <img class="icon inline w-8 h-8" v-bind:src="getIcon(link)" v-bind:alt="link.name" />
+      <li class="inline-block py-2 mx-3 md:mx-6" v-for="(link, index) in links" v-bind:key="index">
+        <a v-bind:href="link.href" target="_blank" rel="noopener">
+          <img class="icon inline w-6 h-6 md:w-8 md:h-8" v-bind:src="getIcon(link)" v-bind:alt="link.name" />
         </a>
       </li>
     </ul>
-    <p class="text-md">
-      Former
-      <a
-        class="text-purple-500 hover:text-purple-700 focus:text-purple-700"
-        href="https://lucid-snyder-1b0faa.netlify.com/"
-        target="_blank"
-        rel="noopener"
-      >portfolio</a> site showcasing some past work.
-    </p>
   </div>
 </template>
 
@@ -68,6 +75,13 @@ export default {
           name: "Twitter",
           href: "https://twitter.com/sjfortin/",
           icon: "twitter",
+          svg:
+            '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>'
+        },
+        {
+          name: "Spotify",
+          href: "https://open.spotify.com/user/sjfortin",
+          icon: "spotify",
           svg:
             '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>'
         }
