@@ -5,8 +5,8 @@
     <p class="text-lg md:text-2xl">Web Developer from Minneapolis</p>
     <p class="text-md pt-4">
       Current: Software Engineer at
-      <a href="https://www.optum.com" target="_blank" rel="noopener">
-        Optum
+      <a href="https://irishtitan.com/" target="_blank" rel="noopener">
+        Irish Titan
         <img
           class="inline-block mb-1 w-3 h-3"
           src="../assets/icons/external-link.svg"
